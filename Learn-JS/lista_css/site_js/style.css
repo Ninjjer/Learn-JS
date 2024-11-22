@@ -1,0 +1,29 @@
+#formulario{
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    font-size: .875rem;
+    background: #eee;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,0,1)
+}
+
+
+
+label{
+    display: block;
+}
+
+input{
+    display: block;
+}
+
+.controle{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 30px;
+    padding: 30px;
+}
+
+

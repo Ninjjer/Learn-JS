@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Main</title>
+</head>
+<body>
+    <section class="controle">        
+        <form id="formulario" method="get">
+            <label for="titulo">Texto</label>
+            <input type="text" id="titulo" name="titulo">
+
+            <label for="color">Color</label>
+            <input type="color" id="color" name="color">
+
+            <label for="backgroundcolor">background-color</label>
+            <input type="color" id="backgroundcolor" name="backgroundcolor">
+
+            <label for="height">Height</label>
+            <input type="range" id="height" name="height">
+
+            <label for="width">Width</label>
+            <input type="range" id="width" name="width">
+
+            <label for="border">Border</label>
+            <input type="text" id="border" name="border">
+
+            <label for="borderradius">Border Radius</label>
+            <input type="range" id="borderradius" name="borderradius" min="0" max="25">
+
+            <select id="fonte-letra" name="fonte-letra">
+                <option value="monospace">Monospace</option>
+                <option value="arial">Arial</option>
+                <option value="georgia">Georgia</option>
+            </select>
+
+            <label for="size">Font-Size</label>
+            <input type="text" id="size" name="size">
+        </form>
+    </section>
+    <section class="botao">
+        <button class="botao_principal">botao</button>
+    </section>
+</body>
+<script src="./script.js"></script>
+</html>

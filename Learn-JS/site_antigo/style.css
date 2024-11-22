@@ -1,0 +1,57 @@
+.card-sac{
+    border: 1px solid #f19292;
+    border-radius: 12px;
+}
+
+.card-sac .header-card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.card-sac .header-card button{
+    background-color: none;
+    border: none;
+}
+
+.card-sac .article-card{
+    height: 0;
+    overflow: hidden;
+}
+
+.card-sac.ativo .article-card{
+    height: 35px;
+}
+
+
+
+
+
+
+
+.card-all{
+    border: 1px solid #f19292;
+    border-radius: 12px;
+}
+
+.card-all .header-cardall{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.card-all .header-cardall button{
+    background-color: none;
+    border: none;
+}
+
+.card-all .article-cardall{
+    height: 0;
+    overflow: hidden;
+}
+
+.card-all.ativo .article-cardall{
+    height: 35px;
+}
