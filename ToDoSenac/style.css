@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: #292A46;
+    color: #ECEDFF;
+    font-family: sans-serif;
+}
+
+h1{
+    display: block;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    width: max-content;
+    font-weight: 500;
+}
+h1::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(180deg, #484Da9, #292A46);
+    border-radius: 5px;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.25);
+    z-index: -1;
+    bottom: 0%;
+    left: 0%;
+}
+
+form{
+    margin: 10px;
+    background-color: #484Da9;
+    padding: 10px 15px;
+    border-radius: 18px;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.25);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+form input{
+    border: none;
+    border-radius: 12px;
+    background: #979cf5;
+    padding: 13px 10px;
+}
+
+form button{
+    background: linear-gradient(180deg, #979cf5, #292A46);
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.25);
+    border: none;
+    border-radius: 12px;
+
+}
+
+form button div{
+    width: 25px;
+    height: 8px;
+    background-color: #ECEDFF;
+    border-radius: 8px;
+
+}
+
+form button div:first-child{
+    rotate: 90deg;
+    position: relative;
+    top: 50%;
+    transform: translate(-50%);
+}
+
+#listaTarefa{
+    display: flex;
+    flex-direction:column ;
+    gap: 10px;
+}
+
+.tarefa{
+    padding: 12px 10px;
+    background-color: #484Da9;
+    border-radius: 18px;
+    color: #ECEDFF;
+    font-weight: 600;
+    font-size: 16px;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.25);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tarefa > h2{
+    font-size: 16px;
+}
+
+.tarefa > button{
+    border: solid 4px;
+    border-radius: 4px;
+    background-color: #ECEDFF;
+    padding: 15px;
+    border-color: #979cf5;
+}
+
+.tarefa.feito > button{
+    border-color: #48a953;
+    background-color: #48a953;
+}
+
+.tarefa.nao-feito > button{
+    border-color: #c95151;
+    background-color: #c95151;
+}
+
+.tarefa.incompleto > button{
+    border-color: #d9bc49;
+    background-color: #d9bc49;
+}
